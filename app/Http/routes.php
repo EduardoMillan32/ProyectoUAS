@@ -13,7 +13,7 @@
 
 Route::get('/', 'UASController@index');
 
-Route::get('/{id}', 'UASController@materias');
+Route::get('/materias/{id}', 'UASController@materias');
 
 Route::get('/generarPDF/{idMateria}', 'UASController@generarPDF');
 

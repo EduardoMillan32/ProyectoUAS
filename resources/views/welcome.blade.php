@@ -40,7 +40,7 @@
                         @if($c->id==$id)
 						  <li id="{{$c->id}}" class="active" role="presentation"><a>{{$c->nombre}}</a></li>
                         @else
-                            <li id="{{$c->id}}" role="presentation"><a href="{{url('/')}}/{{$c->id}}">{{$c->nombre}}</a></li>
+                            <li id="{{$c->id}}" role="presentation"><a href="{{url('/materias')}}/{{$c->id}}">{{$c->nombre}}</a></li>
                         @endif
                     @endforeach
                 </ul>
@@ -50,11 +50,11 @@
         </div>
 
         <br>
-        <div class="row">
+        <footer class="row">
             <div class="lista col-xs-12">
                 <strong style="font-family: cursive;">Jesús Eduardo Millan Angulo</strong>
             </div>
-        </div>
+        </footer>
     </div>
 </body>
 </html>
